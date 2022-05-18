@@ -1,0 +1,24 @@
+.icons-container {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-container a {
+  font-size: 24px;
+  color: #000;
+  margin-right: 40px;
+}
+
+.icons-container a:hover {
+  color: #ddd;
+  transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .icons-container {
+    display: none;
+  }
+}

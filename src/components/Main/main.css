@@ -1,0 +1,42 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  position: relative;
+}
+
+form input {
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+form input:focus {
+  background: #ddd;
+}
+
+.made-by {
+  position: absolute;
+  top: 250px;
+  right: -40px;
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .input {
+    width: 250px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+}

@@ -1,0 +1,21 @@
+.nav-container {
+  background: rgb(143, 172, 201, 0.3);
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  margin-top: 10px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-text {
+    font-size: 20px;
+  }
+}
