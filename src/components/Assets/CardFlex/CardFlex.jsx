@@ -1,7 +1,5 @@
 import React from "react";
 import "./cardflex.css";
-import Sun from "../images/sun.png";
-import Suncloud from "../images/suncloud.png";
 
 const CardFlex = ({ weather }) => {
   return (
@@ -16,11 +14,7 @@ const CardFlex = ({ weather }) => {
           <h2>{item.current.humidity}% Humidity </h2>
           <h2>{item.location.localtime}</h2>
           <div className="picture-weather">
-            {item.current.temp_c > 15 ? (
-              <img src={Sun} alt="Sun" />
-            ) : (
-              <img src={Suncloud} alt="Sun" />
-            )}
+            <img src={item.current.condition.icon} alt="Sun" />
           </div>
         </div>
       ))}
